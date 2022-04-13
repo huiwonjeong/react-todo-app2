@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/react-to-do-app/static/js/main.d3dadd59.js",
+    "index.html": "/react-to-do-app/index.html",
+    "main.d3dadd59.js.map": "/react-to-do-app/static/js/main.d3dadd59.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.d3dadd59.js"
+  ]
+}
