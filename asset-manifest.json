@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/react-to-do-app/static/js/main.d3dadd59.js",
-    "index.html": "/react-to-do-app/index.html",
-    "main.d3dadd59.js.map": "/react-to-do-app/static/js/main.d3dadd59.js.map"
+    "main.js": "/react-todo-app2/static/js/main.de73e21d.js",
+    "index.html": "/react-todo-app2/index.html",
+    "main.de73e21d.js.map": "/react-todo-app2/static/js/main.de73e21d.js.map"
   },
   "entrypoints": [
-    "static/js/main.d3dadd59.js"
+    "static/js/main.de73e21d.js"
   ]
 }
