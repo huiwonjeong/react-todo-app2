@@ -53,7 +53,7 @@ export const categoryKeySelector = selector({
     const categories = get(categoryListState);
     const category = get(categoryState);
 
-    const finded_category = categories.find((cat) => cat.key === category);
+    const finded_category = categories?.find((cat) => cat.key === category);
 
     return finded_category?.key;
   },
@@ -64,6 +64,6 @@ export const othersCategorySelector = selector({
     const categories = get(categoryListState);
     const category = get(categoryState);
 
-    return categories.filter((cat) => cat.key !== category);
+    return categories?.filter((cat) => cat.key !== category);
   },
 });
