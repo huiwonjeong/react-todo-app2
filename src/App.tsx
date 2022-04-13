@@ -1,4 +1,6 @@
+import { useSetRecoilState } from "recoil";
 import { createGlobalStyle } from "styled-components";
+import { categoryListState, toDoState } from "./atoms";
 import ToDoList from "./Components/ToDoList";
 
 const GlobalStyle = createGlobalStyle`
@@ -67,6 +69,19 @@ a {
 `;
 
 function App() {
+  const setToDos = useSetRecoilState(toDoState);
+  const setCategories = useSetRecoilState(categoryListState);
+  const storedToDos = JSON.parse(localStorage.getItem("toDos") as string);
+  const storedCategories = JSON.parse(
+    localStorage.getItem("categories") as string
+  );
+
+  if (storedToDos) {
+    setToDos(storedToDos);
+  }
+  if (storedCategories) {
+    setCategories(storedCategories);
+  }
   return (
     <>
       <GlobalStyle />
