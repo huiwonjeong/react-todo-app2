@@ -20,7 +20,7 @@ function ToDoList() {
       <CreateCategory />
       <hr />
       <select value={category} onInput={onInput}>
-        {categories.map((cat, index) => (
+        {categories?.map((cat, index) => (
           <option value={cat.key} key={index}>
             {cat.value}
           </option>

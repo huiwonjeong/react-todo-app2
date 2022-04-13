@@ -26,7 +26,7 @@ function ToDo({ text, category, id }: IToDo) {
   return (
     <li>
       <span>{text}</span>
-      {categories.map((category) => (
+      {categories?.map((category) => (
         <button name={category.key} onClick={onClick}>
           {category.value}
         </button>
